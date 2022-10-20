@@ -1,0 +1,25 @@
+@import "./src/scss/custom.scss";
+
+.page404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primaryColor;
+
+  & > h1 {
+    font-size: 288px;
+    margin-top: 3%;
+  }
+
+  & > p {
+    font-size: 36px;
+    margin-top: 66px;
+  }
+
+    & > a {
+        color: $primaryColor;
+        font-size: 18px;
+        margin-top: 182px;
+    }
+}

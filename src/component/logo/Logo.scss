@@ -1,0 +1,11 @@
+@import "./src/scss/custom.scss";
+
+.Logo {
+  & > img:first-child {
+    height: 58px;
+  }
+  & > img:not(:first-child) {
+    height: 48px;
+    margin: 0 2px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "./src/scss/custom.scss";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $primaryColor;
+    background-color: $backgroundColor;
+    padding: 40px 100px;
+}
