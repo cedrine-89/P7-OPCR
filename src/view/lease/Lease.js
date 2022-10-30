@@ -5,9 +5,9 @@ import Carousel from "../../component/carousel/Carousel";
 import Title from "../../component/title/Title";
 import Host from "../../component/host/Host";
 import Tag from "../../component/tag/Tag";
-import "./Lease.scss";
 import Rating from "../../component/rating/Rating";
 import Dropdown from "../../component/dropdown/Dropdown";
+import "./Lease.scss";
 
 export default function Lease() {
   const [lease, setLease] = useState(null);

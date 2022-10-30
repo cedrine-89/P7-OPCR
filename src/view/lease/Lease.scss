@@ -1,4 +1,5 @@
-@import "../../scss/custom";
+@import "../../scss/custom.scss";
+@import "../../scss/mixin.scss";
 
 .Lease {
   font-size: 18px;
@@ -22,6 +23,23 @@
 
     & > div > span {
       margin-right: 10px;
+    }
+  }
+}
+
+@include for-phone-only {
+  .Lease {
+    font-size: 14px;
+
+    &_Information {
+      display: block;
+    }
+
+    &_Tags_Rating {
+      display: block;
+      & > div {
+        margin-bottom: 15px;
+      }
     }
   }
 }

@@ -1,5 +1,15 @@
+@import "./src/scss/mixin.scss";
+
 .Rating {
   & > img {
     margin-left: 10px;
+  }
+}
+
+@include for-phone-only {
+  .Rating {
+    & > img {
+      height: 15px;
+    }
   }
 }

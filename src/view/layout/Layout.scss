@@ -19,6 +19,7 @@
 
       & > a {
         font-size: 24px;
+        line-height: 34px;
         color: $primaryColor;
         text-decoration: none;
       }
@@ -37,11 +38,12 @@
   }
   .navbar {
     &_menu {
-      column-gap: 5px;
+      column-gap: 15px;
 
       & > li {
         & > a {
-          font-size: 12px;
+          font-size: 16px;
+          line-height: 17px;
         }
       }
     }

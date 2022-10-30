@@ -42,7 +42,19 @@
 }
 
 @include for-phone-only {
-  .HeaderSection {
+  .Banner {
+    height: 111px;
     margin-top: 20px;
+
+    & > div {
+      & > img {
+        border-radius: 10px;
+      }
+      & > h1 {
+        font-size: 24px;
+        line-height: 24px;
+        border-radius: 10px;
+      }
+    }
   }
 }
