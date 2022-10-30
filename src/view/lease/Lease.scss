@@ -1,1 +1,27 @@
 @import "../../scss/custom";
+
+.Lease {
+  font-size: 18px;
+
+  &_Information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    column-gap: 50px;
+  }
+
+  &_Location {
+    margin-bottom: 20px;
+  }
+
+  &_Tags_Rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div > span {
+      margin-right: 10px;
+    }
+  }
+}

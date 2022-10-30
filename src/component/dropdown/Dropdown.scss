@@ -1,0 +1,36 @@
+@import "./src/scss/custom.scss";
+
+.Dropdown {
+  width: 100%;
+  align-self: flex-start;
+
+  &_Title {
+    color: $secondaryColor;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    background: #FF6060;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    & > :first-child {
+      flex-basis: 100%;
+    }
+
+    &_Close {
+      align-items: flex-end;
+    }
+  }
+
+  &_Content {
+    background: #F7F7F7;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    & > ul {
+        list-style: none;
+    }
+  }
+}

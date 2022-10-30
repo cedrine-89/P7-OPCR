@@ -1,0 +1,10 @@
+@import "./src/scss/custom.scss";
+
+.Tag {
+  font-size: 14px;
+  font-weight: 500;
+  color: $secondaryColor;
+  background: $primaryColor;
+  border-radius: 10px;
+  padding: 5px 25px;
+}
