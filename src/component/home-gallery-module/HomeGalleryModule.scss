@@ -1,0 +1,41 @@
+@import "./src/scss/custom.scss";
+@import "./src/scss/mixin.scss";
+
+.GalleryModule {
+  position: relative;
+  width: 31%;
+  height: 340px;
+  padding: 10px;
+  border-radius: 10px;
+  color: $secondaryColor;
+  background: linear-gradient(180deg, $primaryColor, #252525);
+
+  & > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  &_Image {
+    width: 100%;
+    height: 100%;
+    & > img {
+      width: 100%;
+      height: 90%;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+
+  &_Title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+  }
+}
+
+@include for-phone-only {
+  .GalleryModule {
+    width: 100%;
+  }
+}

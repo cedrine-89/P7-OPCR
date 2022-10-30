@@ -1,0 +1,31 @@
+@import "./src/scss/custom.scss";
+@import "./src/scss/mixin.scss";
+
+footer {
+  position: relative;
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $secondaryColor;
+
+  & > p {
+    margin-top: 25px;
+    font-size: 24px;
+  }
+}
+
+@include for-phone-only {
+  footer {
+    height: 100px;
+
+    & > p {
+      font-size: 12px;
+    }
+  }
+}

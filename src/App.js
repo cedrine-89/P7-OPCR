@@ -1,10 +1,10 @@
-import React from "react";
+import React, { memo } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./component/layout/Layout";
-import Home from "./component/home/Home";
-import About from "./component/about/About";
-import Page404 from "./component/page404/Page404";
-import Carrousel from "./component/carrousel/Carrousel";
+import Layout from "./view/layout/Layout";
+import Home from "./view/home/Home";
+import About from "./view/about/About";
+import Page404 from "./view/page404/Page404";
+import Lease from "./view/lease/Lease";
 import "./App.scss";
 
 function App() {
@@ -12,18 +12,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={
-            <>
-              <Home />
-              <Carrousel image="/img/home-background.png" text="Header de l'accueil" />
-            </>}
-          />
-          <Route path="about" element={
-            <>
-              <About />
-              <Carrousel image="/img/about-background.png" text="Header de la section à propos" />
-            </>}
-          />
+          <Route index element={<Home />} />
+          <Route path="logement/:id" element={<Lease />} />
+          <Route path="about" element={<About />} />
           <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>
@@ -31,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);

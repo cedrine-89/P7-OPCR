@@ -1,0 +1,48 @@
+@import "./src/scss/custom.scss";
+@import "./src/scss/mixin.scss";
+
+.Banner {
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  height: 240px;
+
+  & > div {
+    flex-basis: 100%;
+    width: 100%;
+    height: 100%;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+
+    & > h1 {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      color: $secondaryColor;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 48px;
+      line-height: 68px;
+      font-weight: 700;
+      border-radius: 25px;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+      z-index: 999;
+    }
+  }
+}
+
+@include for-phone-only {
+  .HeaderSection {
+    margin-top: 20px;
+  }
+}

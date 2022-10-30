@@ -1,4 +1,9 @@
-@import "./src/scss/custom.scss";
+@import "../../scss/custom";
+@import "../../scss/mixin";
+
+.padding {
+  padding: 40px 100px;
+}
 
 .navbar {
   display: flex;
@@ -20,6 +25,24 @@
 
       & > .active {
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+@include for-phone-only {
+  .padding {
+    padding: 20px;
+  }
+  .navbar {
+    &_menu {
+      column-gap: 5px;
+
+      & > li {
+        & > a {
+          font-size: 12px;
+        }
       }
     }
   }

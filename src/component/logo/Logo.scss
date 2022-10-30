@@ -1,11 +1,16 @@
 @import "./src/scss/custom.scss";
+@import "./src/scss/mixin.scss";
 
 .Logo {
-  & > img:first-child {
+  & > img {
     height: 58px;
   }
-  & > img:not(:first-child) {
-    height: 48px;
-    margin: 0 2px;
+}
+
+@include for-phone-only {
+  .Logo {
+    & > img {
+      height: 38px;
+    }
   }
 }
