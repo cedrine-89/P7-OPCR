@@ -1,0 +1,15 @@
+@import "../../scss/mixin.scss";
+
+.About {
+  &_Dropdown {
+    margin: 30px 100px 0;
+  }
+}
+
+@include for-phone-only {
+  .About {
+    &_Dropdown {
+      margin: 20px 0 0;
+    }
+  }
+}
