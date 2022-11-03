@@ -8,7 +8,7 @@
   padding: 10px;
   border-radius: 10px;
   color: $secondaryColor;
-  background: linear-gradient(180deg, $primaryColor, #252525);
+  background: linear-gradient(180deg, $primaryColor 0%, rgba(0, 0, 0, 0.5) 100%);
 
   & > div {
     width: 100%;

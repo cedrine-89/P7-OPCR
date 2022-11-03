@@ -12,7 +12,7 @@ export default function Layout() {
             <Logo src="/img/Logo-Primary.png" />
             <ul className="navbar_menu">
               <li><NavLink to="/" end>Accueil</NavLink></li>
-              <li><NavLink to="/about" end>A Propos</NavLink></li>
+              <li><NavLink to="/about">A Propos</NavLink></li>
             </ul>
           </nav>
         </header>

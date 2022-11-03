@@ -1,24 +1,24 @@
 import './Dropdown.scss';
 import { useState } from "react";
 import arrow_up from './img/arrow_up.png';
-import arrow_down from './img/arrow_down.png';
 
 export default function Dropdown({ status, listing, title, children }) {
   const [open, setOpen] = useState(status);
-  const elements = [];
 
   return (
     <div className="Dropdown">
-      <div className="Dropdown_Title">
+      <div className="Dropdown_Title" onClick={() => setOpen(!open)}>
         <span>{title}</span>
-        <img className="Dropdown_Title_Close" src={open ? arrow_up : arrow_down} alt="" onClick={() => setOpen(!open)} />
+        <img className={open ? "Dropdown_Title_Close_Active" : "Dropdown_Title_Close"} src={arrow_up} alt="" />
       </div>
-      {open && <div className="Dropdown_Content">
+      {<div className={open ? "Dropdown_Content Active" : "Dropdown_Content InActive"}>
         {!listing && children}
-        {listing && children.map((item, index) => {
-          elements.push(<li key={`${index}-${Math.random()}`}>{item}</li>);
-        })}
-        {listing && <ul>{elements}</ul>}
+        {listing &&
+          <ul>
+          {children.map((item, index) => {
+            return <li key={`${index}-${Math.random()}`}>{item}</li>;
+          })}
+        </ul>}
       </div>}
     </div>
   );
