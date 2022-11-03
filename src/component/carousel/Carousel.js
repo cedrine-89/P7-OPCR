@@ -18,8 +18,12 @@ export default function Carousel({ images, text, prefix }) {
   return (
     <section className="Carousel">
       {/* Create button navigation */}
-      <img onClick={() => slideRight()} src={arrowRight} className="Carousel_SlideRight" alt="Slide à droite" />
-      <img onClick={() => slideLeft()} src={arrowLeft} className="Carousel_SlideLeft" alt="Slide à gauche" />
+      {images.length > 1 && (
+        <>
+          <img onClick={() => slideRight()} src={arrowRight} className="Carousel_SlideRight" alt="Slide à droite" />
+          <img onClick={() => slideLeft()} src={arrowLeft} className="Carousel_SlideLeft" alt="Slide à gauche" />
+        </>
+      )}
       {/* MAP View DIV and add class slide + active or not */}
       {images.map((img, index) => {
         return (
