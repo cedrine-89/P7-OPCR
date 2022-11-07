@@ -22,3 +22,11 @@
     background: $secondaryColor;
   }
 }
+
+
+@include for-tablet-portrait-up {
+  .HomeGallery {
+    padding: 0;
+    background: $secondaryColor;
+  }
+}

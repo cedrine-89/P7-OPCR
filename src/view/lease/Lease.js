@@ -28,17 +28,15 @@ export default function Lease() {
     <div className="Lease">
       {lease && <Carousel images={lease.pictures} text={lease.title} prefix={lease.id} />}
       <div className="Lease_Information">
-        {lease && <Title title={lease.title} />}
-        {lease && <Host host={lease.host} />}
-      </div>
-      <div className="Lease_Location">
-        {lease && <p>{lease.location}</p>}
-      </div>
-      <div className="Lease_Tags_Rating">
-        <div>
+        <div className="Lease_Information_Col1">
+          {lease && <Title title={lease.title} />}
+          {lease && <p>{lease.location}</p>}
           {lease && lease.tags.map((tag, index) => { return <Tag key={`${lease.id}-${index}-${Math.random()}`} tag={tag} /> })}
         </div>
-        {lease && <Rating rating={lease.rating} />}
+        <div className="Lease_Information_Col2">
+          {lease && <Host host={lease.host} />}
+          {lease && <Rating rating={lease.rating} />}
+        </div>
       </div>
       <div className="Lease_Information">
         {lease && <Dropdown status={true} listing={false} title="Description" children={lease.description} />}

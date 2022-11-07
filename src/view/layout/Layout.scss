@@ -49,3 +49,15 @@
     }
   }
 }
+
+@include for-tablet-portrait-down {
+  .padding {
+    padding: 20px;
+  }
+}
+
+@include for-tablet-landscape-down {
+  .padding {
+    padding: 20px;
+  }
+}

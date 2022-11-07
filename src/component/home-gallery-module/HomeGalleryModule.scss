@@ -49,6 +49,18 @@
   }
 }
 
+@include for-tablet-portrait-down {
+  .GalleryModule {
+    width: 48%;
+  }
+}
+
+@include for-desktop-down {
+  .GalleryModule {
+    width: 48%;
+  }
+}
+
 @include for-phone-only {
   .GalleryModule {
     width: 100%;
