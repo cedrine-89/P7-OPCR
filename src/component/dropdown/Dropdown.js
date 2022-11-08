@@ -11,7 +11,7 @@ export default function Dropdown({ status, listing, title, children }) {
         <span>{title}</span>
         <img className={open ? "Dropdown_Title_Close_Active" : "Dropdown_Title_Close"} src={arrow_up} alt="" />
       </div>
-      {<div className={open ? "Dropdown_Content Active" : "Dropdown_Content InActive"}>
+      <div className={open ? "Dropdown_Content Active" : "Dropdown_Content InActive"}>
         {!listing && children}
         {listing &&
           <ul>
@@ -19,7 +19,7 @@ export default function Dropdown({ status, listing, title, children }) {
             return <li key={`${index}-${Math.random()}`}>{item}</li>;
           })}
         </ul>}
-      </div>}
+      </div>
     </div>
   );
 }
