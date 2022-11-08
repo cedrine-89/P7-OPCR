@@ -11,6 +11,11 @@
     align-items: center;
     margin-top: 20px;
     column-gap: 50px;
+    &_Col1 {
+      & > * {
+        margin-bottom: 15px;
+      }
+    }
     &_Col2 {
       display: flex;
       justify-content: space-between;
@@ -19,6 +24,9 @@
 
       & > .Rating {
         order: -1;
+      }
+      & > * {
+        margin-bottom: 15px;
       }
     }
   }
