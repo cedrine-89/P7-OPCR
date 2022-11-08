@@ -14,6 +14,7 @@
     &_Col2 {
       display: flex;
       justify-content: space-between;
+      flex-direction: column-reverse;
       align-items: center;
 
       & > .Rating {
@@ -34,6 +35,9 @@
         & > * {
           margin-bottom: 10px;
         }
+      }
+      &_Col2 {
+        flex-direction: row;
       }
     }
   }
