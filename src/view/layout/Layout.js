@@ -1,21 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
-import Logo from "../../component/logo/Logo";
+import { Outlet } from "react-router-dom";
 import Footer from "../../component/footer/Footer";
+import Header from "../../component/header/Header";
 import "./Layout.scss";
 
 export default function Layout() {
   return (
     <>
       <div className="padding">
-        <header>
-          <nav className="navbar">
-            <Logo src="/img/Logo-Primary.png" />
-            <ul className="navbar_menu">
-              <li><NavLink to="/" end>Accueil</NavLink></li>
-              <li><NavLink to="/about">A Propos</NavLink></li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
         <Outlet />
       </div>
       <Footer />

@@ -1,0 +1,43 @@
+@import "../../scss/custom";
+@import "../../scss/mixin";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_menu {
+    display: flex;
+    column-gap: 50px;
+
+    & > li {
+      list-style: none;
+
+      & > a {
+        font-size: 24px;
+        line-height: 34px;
+        color: $primaryColor;
+        text-decoration: none;
+      }
+
+      & > .active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include for-phone-only {
+  .navbar {
+    &_menu {
+      column-gap: 15px;
+
+      & > li {
+        & > a {
+          font-size: 16px;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
