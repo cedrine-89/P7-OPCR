@@ -2,7 +2,7 @@
 
 P7 OpenClassRooms
 
-## Install
+## Install dependency
 ```bash
 npm install
 ```
