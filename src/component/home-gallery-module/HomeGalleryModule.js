@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import "./HomeGalleryModule.scss";
 
-export default function HomeGalleryModule({ logement }) {
+export default function HomeGalleryModule({ lease }) {
   return (
-    <Link className="GalleryModule" to={"logement/" + logement.id}>
+    <Link className="GalleryModule" to={"logement/" + lease.id}>
       <div className="GalleryModule_Image">
-        <img src={logement.cover} alt="" />
+        <img src={lease.cover} alt={lease.title} />
         <div className="GalleryModule_Title">
           <span>
-            <p>{logement.title}</p>
-            <p>{logement.location}</p>
+            <p>{lease.title}</p>
+            <p>{lease.location}</p>
           </span>
         </div>
       </div>
