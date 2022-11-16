@@ -31,7 +31,7 @@ export default function Lease() {
         <div className="Lease_Information_Col1">
           {lease && <Title title={lease.title} />}
           {lease && <p>{lease.location}</p>}
-          {lease && lease.tags.map((tag, index) => { return <Tag key={`${lease.id}-${index}-${Math.random()}`} tag={tag} /> })}
+          <div className="Lease_Information_Tag">{lease && lease.tags.map((tag, index) => { return <Tag key={`${lease.id}-${index}-${Math.random()}`} tag={tag} /> })}</div>
         </div>
         <div className="Lease_Information_Col2">
           {lease && <Host host={lease.host} />}

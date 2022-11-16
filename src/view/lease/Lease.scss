@@ -11,11 +11,22 @@
     align-items: center;
     margin-top: 20px;
     column-gap: 50px;
+
+    &_Tag {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+
     &_Col1 {
       & > * {
         margin-bottom: 15px;
       }
     }
+
     &_Col2 {
       display: flex;
       justify-content: space-between;
@@ -25,6 +36,7 @@
       & > .Rating {
         order: -1;
       }
+
       & > * {
         margin-bottom: 15px;
       }
@@ -38,12 +50,15 @@
 
     &_Information {
       display: block;
+
       &_Col1 {
         margin-bottom: 20px;
+
         & > * {
           margin-bottom: 10px;
         }
       }
+
       &_Col2 {
         flex-direction: row;
       }
