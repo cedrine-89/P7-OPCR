@@ -71,6 +71,11 @@
 
 @include for-phone-only {
   .Dropdown {
+    &_Content {
+      font-size: 12px;
+      line-height: 17.11px;
+    }
+
     &_Title {
       border-radius: 5px;
 
