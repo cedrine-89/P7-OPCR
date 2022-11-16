@@ -10,10 +10,21 @@
     color: $secondaryColor;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
     background: #FF6060;
     padding: 10px 20px;
     border-radius: 10px;
+
+    & > span {
+      font-size: 24px;
+      line-height: 34.22px;
+    }
+
+    & > img {
+      height: 16px;
+      width: 26px;
+    }
 
     & > :first-child {
       flex-basis: 100%;
@@ -62,6 +73,17 @@
   .Dropdown {
     &_Title {
       border-radius: 5px;
+
+      & > span {
+        font-size: 13px;
+        line-height: 18.54px;
+      }
+
+      & > img {
+        height: 9px;
+        width: 16px;
+      }
+
     }
   }
 }
