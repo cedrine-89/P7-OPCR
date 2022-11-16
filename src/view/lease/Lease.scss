@@ -16,9 +16,9 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
       flex-wrap: wrap;
       row-gap: 10px;
+      column-gap: 10px;
     }
 
     &_Col1 {
@@ -50,6 +50,10 @@
 
     &_Information {
       display: block;
+
+      &_Tag {
+        justify-content: space-between;
+      }
 
       &_Col1 {
         margin-bottom: 20px;
